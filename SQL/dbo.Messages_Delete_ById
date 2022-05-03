@@ -1,0 +1,54 @@
+USE [Trainsquare]
+GO
+/****** Object:  StoredProcedure [dbo].[Messages_Delete_ById]    Script Date: 5/3/2022 6:44:39 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+-- Author: Arreguin, Guillermo
+-- Create date: 03/25/2022
+-- Description:	Delete Message by Id proc
+-- Code Reviewer: Elizabeth Phung
+
+
+-- MODIFIED BY: author
+-- MODIFIED DATE:12/1/2020
+-- Code Reviewer: 
+-- Note: 
+
+
+
+
+ALTER PROC [dbo].[Messages_Delete_ById]
+				@Id int
+AS
+/*
+
+	DECLARE @Id int = 11
+
+	SELECT *
+	  FROM [dbo].[Messages]
+	  WHERE @Id = Id
+
+	EXECUTE [dbo].[Messages_Delete_ById]
+			@Id
+
+	SELECT *
+	  FROM [dbo].[Messages]
+	  WHERE @Id = Id
+
+*/
+BEGIN 
+
+
+
+DELETE FROM [dbo].[Messages]
+      WHERE @Id = Id
+
+
+
+
+
+END
